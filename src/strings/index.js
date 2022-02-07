@@ -1,15 +1,18 @@
 const split = (str, delim) => {
-  // write code for strings.split
+  return str.split(delim);
 
 }
 
 const pairs = (str) => {
-  // write code for strings.pairs
+  return str.match(/.{2}/g);
 
 }
 
 const reverse = (str) => {
-  // write code for strings.reverse
+  let splitStr = str.split('');
+  let reversedStr = splitStr.reverse();
+  let newStr = reversedStr.join('');
+  return newStr;
 
 }
 
